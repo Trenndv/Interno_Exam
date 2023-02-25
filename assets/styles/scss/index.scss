@@ -5,3 +5,45 @@
 :root {
   font-size: 10px;
 }
+
+.centerd {
+  padding: 0 percentage($number: 360/1920);
+}
+.main-navigation {
+  padding: 4.4rem percentage($number: 360/1920) 0;
+
+  &__content {
+    display: flex;
+    gap: 39.9rem;
+  }
+  &__content--title {
+    display: flex;
+    align-items: center;
+  }
+  &__content--logo {
+    font-family: fonts.$serif-fonts;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5rem;
+    // text-decoration: none;
+  }
+
+  &__content--links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    a {
+      text-decoration: none;
+      :hover {
+        text-decoration: underline;
+      }
+      h5 {
+        font-family: fonts.$jost-fonts;
+      }
+    }
+  }
+  &__content--vector {
+    display: flex;
+    gap: 3.1rem;
+  }
+}
