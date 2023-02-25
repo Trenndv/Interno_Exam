@@ -1,1 +1,46 @@
+// @use "./colors";
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600;700&display=swap");
+$serif-fonts: "DM Serif Display", serif;
+$jost-fonts: "Jost", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $serif-fonts;
+  font-weight: 400;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 6.25rem;
+}
+h2 {
+  font-size: 3.5rem;
+  line-height: 4.375rem;
+}
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.75rem;
+}
+h5 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+h6 {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-family: $jost-fonts;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
