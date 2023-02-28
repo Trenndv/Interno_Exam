@@ -65,9 +65,9 @@
   height: 104.2rem;
   background-image: url(../../styles/img/interno-image.jpg);
   background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  padding-top: 46.8rem;
+  background-position: center;
+  background-size: cover;
+  padding-top: 33rem;
   padding-left: percentage($number: 360/1920);
   margin-bottom: 20rem;
   &__description--text {
@@ -136,3 +136,72 @@
     }
   }
 }
+
+.art {
+  @extend %centerd-content;
+  &__main {
+    display: flex;
+    gap: 7.5rem;
+    margin-bottom: 20rem;
+
+    &--description {
+      padding: 4.3rem 0;
+      h1 {
+        letter-spacing: 0.2px;
+        width: 47.2rem;
+        margin-bottom: 3.3rem;
+      }
+      &-text {
+        margin-bottom: 4.5rem;
+      }
+    }
+    &--call {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      margin-bottom: 4.7rem;
+    }
+    &--nr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &--tel {
+      color: colors.$black-gray;
+      font-family: fonts.$jost-fonts;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0.1px;
+      margin-bottom: 0rem;
+    }
+
+    &--button {
+      @extend %button;
+      width: 23.8rem;
+      height: 7.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      h6 {
+        font-family: fonts.$jost-fonts;
+        color: colors.$white;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// @media (max-width: 900px) {
+//   .main-navigation__content {
+//     gap: 20rem;
+//   }
+//   .banner {
+//     background-size: cover;
+//     background-position: center;
+//     width: 133rem;
+//     height: auto;
+//   }
+// }

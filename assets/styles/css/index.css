@@ -159,9 +159,14 @@ p {
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 3.3rem;
+  letter-spacing: 0.1px;
 }
 
-.banner__buttom {
+.art {
+  margin: 0 18.75%;
+}
+
+.art__main--button, .banner__buttom {
   background-color: #292f36;
   border-radius: 18px;
   width: 22rem;
@@ -218,7 +223,9 @@ p {
   height: 104.2rem;
   background-image: url(../../styles/img/interno-image.jpg);
   background-repeat: no-repeat;
-  padding-top: 46.8rem;
+  background-position: center;
+  background-size: cover;
+  padding-top: 33rem;
   padding-left: 18.75%;
   margin-bottom: 20rem;
 }
@@ -278,6 +285,57 @@ p {
 .plans__option--meny1 h6 {
   color: #4d5053;
   font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+
+.art__main {
+  display: flex;
+  gap: 7.5rem;
+  margin-bottom: 20rem;
+}
+.art__main--description {
+  padding: 4.3rem 0;
+}
+.art__main--description h1 {
+  letter-spacing: 0.2px;
+  width: 47.2rem;
+  margin-bottom: 3.3rem;
+}
+.art__main--description-text {
+  margin-bottom: 4.5rem;
+}
+.art__main--call {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 4.7rem;
+}
+.art__main--nr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.art__main--tel {
+  color: #4d5053;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 0rem;
+}
+.art__main--button {
+  width: 23.8rem;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.art__main--button h6 {
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2px;
   font-weight: 600;
 }
 
