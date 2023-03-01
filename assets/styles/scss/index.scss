@@ -194,6 +194,42 @@
   }
 }
 
+.about {
+  @extend %centerd-content;
+  width: 119.9rem;
+  height: 67.9rem;
+  border-radius: 70px;
+  background-color: colors.$white-gray;
+  margin-bottom: 15rem;
+  h1 {
+    margin: 8.8rem 32.55rem 3.8rem;
+    text-align: center;
+    width: 54.7rem;
+    letter-spacing: 0.2px;
+  }
+  &__autor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__autor--wrapper {
+    display: flex;
+    gap: 2rem;
+    figure {
+      width: 37rem;
+      height: 33.9rem;
+      border-radius: 35px;
+      background-color: colors.$white;
+      padding: 5.3rem 3.7rem;
+    }
+  }
+  &__autor--name {
+    display: flex;
+    gap: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 // @media (max-width: 900px) {
 //   .main-navigation__content {
 //     gap: 20rem;
