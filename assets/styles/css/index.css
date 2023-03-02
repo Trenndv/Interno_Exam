@@ -162,7 +162,7 @@ p {
   letter-spacing: 0.1px;
 }
 
-.about, .art {
+.project, .icon, .about, .art {
   margin: 0 18.75%;
 }
 
@@ -176,6 +176,10 @@ p {
 
 :root {
   font-size: 10px;
+}
+
+.img {
+  max-width: 100%;
 }
 
 .hidden {
@@ -372,6 +376,65 @@ p {
   display: flex;
   gap: 2.3rem;
   margin-bottom: 2.5rem;
+}
+
+.icon {
+  margin-bottom: 15.1rem;
+}
+.icon__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10.8rem;
+  padding: 0 5.5rem;
+}
+
+.project__description {
+  padding-left: 23.2rem;
+  margin-bottom: 9.3rem;
+}
+.project h1 {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.project p {
+  text-align: center;
+}
+.project__option {
+  display: flex;
+  gap: 10.4rem;
+  margin-bottom: 5.6rem;
+}
+.project__option--second {
+  display: flex;
+  gap: 10.4rem;
+  margin-bottom: 15rem;
+}
+.project__option--img {
+  max-width: 100%;
+  margin-bottom: 2.4rem;
+}
+.project__option--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 26rem;
+}
+.project__option--title {
+  display: flex;
+  flex-direction: column;
+  width: 21.7rem;
+  align-items: flex-start;
+}
+.project__option--title h3 {
+  margin-bottom: 0.4rem;
+}
+.project__option--next {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+}
+.project__option--vector {
+  padding: 2.6rem 3rem;
 }
 
 /*# sourceMappingURL=index.css.map */
