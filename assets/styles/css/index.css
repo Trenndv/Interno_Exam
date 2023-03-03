@@ -437,4 +437,56 @@ p {
   padding: 2.6rem 3rem;
 }
 
+.experience {
+  padding: 0 21.8229166667%;
+  background-color: #f4f0ec;
+  width: 192rem;
+}
+.experience__meny {
+  padding: 15.1rem 0;
+  height: 45.7rem;
+  display: flex;
+  gap: 7.6rem;
+}
+.experience__wrapper {
+  display: flex;
+  height: 15.5rem;
+  align-items: center;
+}
+.experience__wrapper--first {
+  margin-right: 5.4rem;
+}
+.experience__wrapper--second {
+  margin-right: 7.6rem;
+}
+.experience__wrapper--third {
+  margin-right: 8.4rem;
+}
+.experience__main--numbers {
+  font-family: "Jost", sans-serif;
+  color: #cda274;
+  font-weight: 400;
+  font-size: 8.5rem;
+  line-height: 10.625rem;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.experience__main--text1 {
+  width: 19.2rem;
+}
+.experience__main--text2 {
+  width: 14.7rem;
+}
+.experience__main--text3 {
+  width: 13rem;
+}
+.experience__main--text4 {
+  width: 17.1rem;
+}
+.experience__main--border {
+  border-right: 1px solid #cda274;
+  height: 13rem;
+}
+
 /*# sourceMappingURL=index.css.map */
