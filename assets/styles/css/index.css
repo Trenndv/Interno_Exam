@@ -162,7 +162,7 @@ p {
   letter-spacing: 0.1px;
 }
 
-.project, .icon, .about, .art {
+.interno, .contact, .news, .project, .icon, .about, .art {
   margin: 0 18.75%;
 }
 
@@ -244,12 +244,18 @@ p {
   margin-bottom: 2.1rem;
   letter-spacing: 1px;
 }
+.banner__description--text a {
+  text-decoration: none;
+}
 .banner__buttom {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   margin-bottom: 23.4rem;
+}
+.banner__buttom:hover {
+  background: #4d5053;
 }
 .banner__buttom h6 {
   color: #fff;
@@ -270,6 +276,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.plans__option--meny a {
+  text-decoration: none;
+}
+.plans__option--meny a:hover {
+  text-decoration: underline;
 }
 .plans__option--meny h3 {
   margin-bottom: 2rem;
@@ -335,12 +347,20 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-decoration: none;
+}
+.art__main--button:hover {
+  background: #4d5053;
+  color: #292f36;
 }
 .art__main--button h6 {
   font-family: "Jost", sans-serif;
   color: #fff;
   letter-spacing: 0.2px;
   font-weight: 600;
+}
+.art__main--button h6:hover {
+  color: #cda274;
 }
 
 .about {
@@ -438,13 +458,12 @@ p {
 }
 
 .experience {
-  padding: 0 21.8229166667%;
-  background-color: #f4f0ec;
+  padding: 15.1rem 21.8229166667%;
+  background: #f4f0ec;
   width: 192rem;
+  margin-bottom: 20rem;
 }
 .experience__meny {
-  padding: 15.1rem 0;
-  height: 45.7rem;
   display: flex;
   gap: 7.6rem;
 }
@@ -487,6 +506,161 @@ p {
 .experience__main--border {
   border-right: 1px solid #cda274;
   height: 13rem;
+}
+
+.news__title {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.2rem;
+  width: 120rem;
+}
+.news__title p {
+  text-align: center;
+  padding: 0 19.45rem;
+}
+.news__article {
+  display: flex;
+  gap: 2.7rem;
+  margin-bottom: 20rem;
+}
+.news__article--wrapper {
+  width: 38.2rem;
+  height: 52.1rem;
+  border: 1px solid #e7e7e7;
+  border-radius: 62px;
+}
+.news__article--wrapper a {
+  display: block;
+  padding: 2.1rem;
+  border-radius: 62px;
+  text-decoration: none;
+}
+.news__article--wrapper a:hover {
+  text-decoration: underline;
+  background: #e7e7e7;
+}
+.news__article--wrapper img {
+  margin-bottom: 2.1rem;
+}
+.news__article--wrapper h3 {
+  width: 30.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 3rem;
+}
+.news__article--date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.news__article--next {
+  background-color: #f4f0ec;
+  border-radius: 50%;
+  width: 5.2rem;
+  height: 5.2rem;
+  padding: 1.93rem 2.29rem 1.93rem 2.37rem;
+}
+
+.contact {
+  width: 120rem;
+  height: 37.4rem;
+  border-radius: 70px;
+  background: #292f36;
+  margin-bottom: 13.5rem;
+}
+.contact__us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 26.25%;
+}
+.contact__us h1 {
+  color: #fff;
+  margin-bottom: 1.1rem;
+}
+.contact__us p {
+  color: #fff;
+  letter-spacing: 0.1px;
+  margin-bottom: 3.2rem;
+}
+.contact__us--btn {
+  width: 23.72rem;
+  height: 7.5rem;
+  border-radius: 18px;
+  background-color: #cda274;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+.contact__us--button {
+  text-decoration: none;
+}
+.contact__us--button h6 {
+  font-family: "Jost", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.interno {
+  width: 120rem;
+}
+.interno__main {
+  display: flex;
+  gap: 10.1rem;
+  margin-bottom: 13.4rem;
+}
+.interno__main--logo img {
+  margin-bottom: 1.8rem;
+}
+.interno__main--logo p {
+  width: 39.3rem;
+  margin-bottom: 3.1rem;
+}
+.interno__main--icon {
+  display: flex;
+  gap: 5.4rem;
+  align-items: center;
+}
+.interno__main--article {
+  width: 12.5rem;
+}
+.interno__main--article a {
+  text-decoration: none;
+}
+.interno__main--article a:hover {
+  text-decoration: underline;
+}
+.interno__main--article h3 {
+  margin-bottom: 0.9rem;
+}
+.interno__main--article p {
+  line-height: 6.6rem;
+  margin-bottom: 0.9rem;
+}
+.interno__main--contact {
+  width: 25.8rem;
+}
+.interno__main--contact a {
+  text-decoration: none;
+}
+.interno__main--contact a:hover {
+  text-decoration: underline;
+}
+.interno__main--contact h3 {
+  margin-bottom: 2.6rem;
+}
+.interno__main--contact p {
+  margin-bottom: 2.6rem;
+}
+.interno__main--adresse p {
+  line-height: 6.6rem;
+  margin-bottom: 0.9rem;
+}
+.interno__copyright {
+  text-align: center;
+  padding-bottom: 4.6rem;
 }
 
 /*# sourceMappingURL=index.css.map */
