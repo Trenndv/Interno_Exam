@@ -663,6 +663,144 @@ p {
   padding-bottom: 4.6rem;
 }
 
+@media (max-width: 1000px) {
+  .main-navigation__content {
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding-top: 15rem;
+    padding-left: 16%;
+    margin-bottom: 7rem;
+    padding-bottom: 15rem;
+  }
+  .plans {
+    margin-bottom: 10rem;
+  }
+  .plans__option {
+    flex-direction: column;
+  }
+  .art__main {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+    margin-bottom: 10rem;
+  }
+  .about {
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+  .about__autor {
+    margin-bottom: 5rem;
+  }
+  .about__autor h1 {
+    width: 32.7rem;
+  }
+  .about__autor--wrapper {
+    flex-direction: column;
+    padding-left: 0.1rem;
+  }
+  .about__autor--fig {
+    margin-bottom: 5rem;
+  }
+  .icon {
+    margin-bottom: 10rem;
+  }
+  .icon__wrapper {
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .project {
+    padding-left: 0;
+  }
+  .project__description {
+    padding-left: 0;
+    margin-bottom: 5.6rem;
+  }
+  .project__description h1 {
+    text-align: start;
+    margin-bottom: 4rem;
+  }
+  .project__description p {
+    text-align: start;
+  }
+  .project__option {
+    flex-direction: column;
+    gap: 5.6rem;
+  }
+  .project__option--wrapper {
+    align-items: flex-start;
+  }
+  .project__option--second {
+    flex-direction: column;
+    gap: 5.6rem;
+    margin-bottom: 10rem;
+  }
+  .experience {
+    padding: 10rem 18.75%;
+    margin-bottom: 8rem;
+  }
+  .experience p {
+    text-align: start;
+  }
+  .experience__meny {
+    gap: 6.6rem;
+    flex-direction: column;
+    padding-left: 20rem;
+  }
+  .experience__wrapper {
+    display: block;
+  }
+  .experience__main--border {
+    border-bottom: 1px solid #cda274;
+    width: 13rem;
+    border-right: none;
+    height: 3rem;
+  }
+  .news__title {
+    width: auto;
+  }
+  .news__title h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .news__title p {
+    padding: 0;
+    text-align: start;
+  }
+  .news__article {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  .news__article--wrapper {
+    height: auto;
+  }
+  .news__article--wrapper h3 {
+    width: auto;
+  }
+  .contact {
+    width: auto;
+    height: auto;
+    margin-bottom: 10rem;
+  }
+  .contact__us {
+    align-items: flex-start;
+  }
+  .interno__main {
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  .interno__copyright {
+    text-align: start;
+    padding-right: 50%;
+  }
+}
 @media (max-width: 420px) {
   .main-navigation__content {
     flex-direction: column;
