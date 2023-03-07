@@ -1,0 +1,110 @@
+@use "./reset";
+@use "./fonts";
+@use "./colors";
+
+%centerd-content {
+  margin: 0 percentage($number: 360/1920);
+}
+%button {
+  background-color: colors.$black;
+  border-radius: 18px;
+  width: 22rem;
+  height: 7.5rem;
+  color: white;
+}
+
+:root {
+  font-size: 10px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.main-navigation {
+  padding: 4.4rem percentage($number: 360/1920) 5.7rem;
+
+  &__content {
+    display: flex;
+    gap: 39.9rem;
+  }
+  &__content--title {
+    display: flex;
+    align-items: center;
+  }
+  &__content--logo {
+    font-family: fonts.$serif-fonts;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 5rem;
+    // text-decoration: none;
+  }
+
+  &__content--links {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    a {
+      text-decoration: none;
+      :hover {
+        text-decoration: underline;
+      }
+      h5 {
+        font-family: fonts.$jost-fonts;
+      }
+    }
+  }
+  &__content--vector {
+    display: flex;
+    gap: 3.1rem;
+  }
+}
+.about_banner {
+  width: 192rem;
+  height: 35.6rem;
+  background-image: url(../../styles/img-about/about-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20rem;
+  &__img--hidden {
+    display: none;
+  }
+  &__img--text {
+    padding: 17.8rem percentage($number: 708/1920) 0;
+  }
+  &__img--about {
+    padding: 4.1rem percentage($number: 151/503);
+    width: 50.3rem;
+    height: 17.8rem;
+    background-color: colors.$white;
+    border-radius: 37px 37px 0 0;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-navigation {
+    &__content {
+      gap: 3rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .about_banner {
+    &__img--text {
+      padding: 17.8rem 11.875% 0;
+    }
+    &__img--about {
+      padding: 4.1rem 10.019881%;
+      h1 {
+        width: 19.9rem;
+      }
+      p {
+        width: 19.9rem;
+      }
+    }
+  }
+}
