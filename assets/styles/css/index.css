@@ -409,7 +409,7 @@ p {
 }
 
 .project__description {
-  padding-left: 23.2rem;
+  padding: 0 12.08%;
   margin-bottom: 9.3rem;
 }
 .project h1 {

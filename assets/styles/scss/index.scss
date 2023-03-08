@@ -268,11 +268,7 @@
 .project {
   @extend %centerd-content;
   &__description {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    padding-left: 23.2rem;
-    // gap: 0.8rem;
+    padding: 0 12.08%;
     margin-bottom: 9.3rem;
   }
   h1 {
