@@ -190,6 +190,214 @@
     }
   }
 }
+.about_poeple {
+  background: colors.$white-gray;
+  padding: 18.5rem 0;
+  margin-bottom: 21.3rem;
+  h1 {
+    text-align: center;
+    width: 54.7rem;
+    margin: 0 percentage($number: 326.6/1200);
+    margin-bottom: 4rem;
+  }
+  &__wrapper {
+    @extend %centerd-content;
+  }
+  &__cardholder {
+    display: flex;
+    gap: 2.2rem;
+  }
+  &__card {
+    background: colors.$white;
+    position: relative;
+    width: 28.35rem;
+    height: 43rem;
+    border-radius: 34px;
+
+    &--container {
+      width: 28.35rem;
+      height: 43.3rem;
+      border-radius: 34px;
+      position: relative;
+    }
+    &--description {
+      padding: 7rem 2.8rem;
+      h3 {
+        text-align: center;
+        line-height: 3.75rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+    }
+    &--design {
+      margin-bottom: 6.5rem;
+      text-align: center;
+    }
+    &--icon {
+      margin-bottom: 6.5rem;
+      display: flex;
+      gap: 3.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+    &--front,
+    &--back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      transition: -webkit-transform 1000ms;
+      transition: transform 1000ms;
+      transition-timing-function: ease-out;
+      transform-origin: center center;
+    }
+    &--front {
+      border-radius: 34px;
+      transform: rotateY(0deg);
+      &:hover {
+        transform: rotateY(-180deg);
+      }
+      img {
+        border-radius: 34px;
+      }
+    }
+    &--back {
+      transform: rotateY(180deg);
+      &:hover {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+}
+.about_creative {
+  @extend %centerd-content;
+  margin-bottom: 13.5rem;
+  &__text {
+    margin: 0 20.2rem;
+    h1 {
+      text-align: center;
+      margin-bottom: 7.7rem;
+    }
+    &--name {
+      display: flex;
+      gap: 4rem;
+      margin-bottom: 5.7rem;
+    }
+    &--inp {
+      width: 37.8rem;
+      height: 4.5rem;
+      color: colors.$black-gray;
+      background: colors.$white;
+      border: none;
+      border-bottom: 1px solid colors.$black;
+      font-family: fonts.$jost-fonts;
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+    }
+    &--area {
+      width: 79.6rem;
+      height: 17.5rem;
+      color: colors.$black-gray;
+      background: colors.$white;
+      border: none;
+      border-bottom: 1px solid colors.$black;
+      font-family: fonts.$jost-fonts;
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+      margin-bottom: 7.7rem;
+    }
+    &--buttom {
+      @extend %button;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 28.8rem;
+      gap: 1rem;
+      &:hover {
+        background: colors.$black-gray;
+      }
+      h6 {
+        font-family: "Jost", sans-serif;
+        color: #fff;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover {
+          color: colors.$gold;
+        }
+      }
+    }
+  }
+}
+.about_interno {
+  @extend %centerd-content;
+  width: 120rem;
+  &__main {
+    display: flex;
+    gap: 10.1rem;
+    margin-bottom: 13.4rem;
+    &--logo {
+      img {
+        margin-bottom: 1.8rem;
+      }
+      p {
+        width: 39.3rem;
+        margin-bottom: 3.1rem;
+      }
+    }
+    &--icon {
+      display: flex;
+      gap: 5.4rem;
+      align-items: center;
+    }
+    &--article {
+      width: 12.5rem;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h3 {
+        margin-bottom: 0.9rem;
+      }
+      p {
+        line-height: 6.6rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+    &--contact {
+      width: 25.8rem;
+      a {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h3 {
+        margin-bottom: 2.6rem;
+      }
+      p {
+        margin-bottom: 2.6rem;
+      }
+    }
+    &--adresse {
+      p {
+        line-height: 6.6rem;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    padding-bottom: 4.6rem;
+  }
+}
 
 @media (max-width: 1000px) {
   .main-navigation {
