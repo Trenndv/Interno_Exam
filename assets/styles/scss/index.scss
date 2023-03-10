@@ -1,6 +1,9 @@
 @use "./reset";
 @use "./fonts";
 @use "./colors";
+// * {
+//   outline: 1px solid red;
+// }
 
 %centerd-content {
   margin: 0 percentage($number: 360/1920);
@@ -65,7 +68,6 @@
 }
 
 .banner {
-  width: 192rem;
   height: 104.2rem;
   background-image: url(../../styles/img/interno-image.jpg);
   background-repeat: no-repeat;
@@ -115,7 +117,7 @@
   margin-bottom: 20rem;
   &__option {
     display: flex;
-    gap: 4.2rem;
+    justify-content: space-between;
   }
   &__option--meny {
     display: flex;
@@ -157,7 +159,7 @@
   @extend %centerd-content;
   &__main {
     display: flex;
-    gap: 7.5rem;
+    justify-content: space-between;
     margin-bottom: 20rem;
 
     &--description {
@@ -169,6 +171,7 @@
       }
       &-text {
         margin-bottom: 4.5rem;
+        width: 47.2rem;
       }
     }
     &--call {
@@ -260,7 +263,7 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    gap: 10.8rem;
+    justify-content: space-between;
     padding: 0 5.5rem;
   }
 }
@@ -280,11 +283,11 @@
   }
   &__option {
     display: flex;
-    gap: 10.4rem;
+    justify-content: space-between;
     margin-bottom: 5.6rem;
     &--second {
       display: flex;
-      gap: 10.4rem;
+      justify-content: space-between;
       margin-bottom: 15rem;
     }
   }
@@ -295,8 +298,7 @@
   &__option--wrapper {
     display: flex;
     align-items: center;
-    // width: 52.5rem;
-    gap: 26rem;
+    justify-content: space-between;
   }
   &__option--title {
     display: flex;
@@ -321,11 +323,10 @@
 .experience {
   padding: 15.1rem percentage($number: 419/1920);
   background: colors.$white-gray;
-  width: 192rem;
   margin-bottom: 20rem;
   &__meny {
     display: flex;
-    gap: 7.6rem;
+    justify-content: space-between;
   }
   &__wrapper {
     display: flex;
@@ -379,7 +380,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5.2rem;
-    width: 120rem;
     p {
       text-align: center;
       padding: 0 19.45rem;
@@ -387,11 +387,10 @@
   }
   &__article {
     display: flex;
-    gap: 2.7rem;
+    justify-content: space-between;
     margin-bottom: 20rem;
     &--wrapper {
-      width: 38.2rem;
-      height: 52.1rem;
+      // width: 38.2rem;
       border: 1px solid colors.$white-dark;
       border-radius: 62px;
 
@@ -418,6 +417,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 3.77rem;
     }
     &--next {
       background-color: colors.$white-gray;
@@ -459,6 +459,9 @@
       align-items: center;
       justify-content: center;
       gap: 1.1rem;
+      &:hover {
+        background: colors.$white-dark;
+      }
     }
     &--button {
       text-decoration: none;
@@ -466,6 +469,9 @@
         font-family: fonts.$jost-fonts;
         color: colors.$white;
         letter-spacing: 0.2px;
+        &:hover {
+          color: colors.$black-gray;
+        }
       }
     }
   }

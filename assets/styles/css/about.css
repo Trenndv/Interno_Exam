@@ -216,11 +216,10 @@ p {
 .main-navigation__content--vector {
   display: flex;
   gap: 3.1rem;
+  align-items: center;
 }
 
 .about_banner {
-  width: 192rem;
-  height: 35.6rem;
   background-image: url(../../styles/img-about/about-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +280,7 @@ p {
   background-color: #fff;
   z-index: 1;
   top: -3rem;
-  left: 17.5rem;
+  left: 16.65rem;
 }
 .about_introduce__border--bottom {
   position: absolute;
@@ -290,7 +289,7 @@ p {
   background-color: #fff;
   z-index: 1;
   bottom: -3rem;
-  left: 17.5rem;
+  left: 16.65rem;
 }
 
 .about_description {
@@ -312,7 +311,6 @@ p {
   margin-bottom: 2.3rem;
 }
 .about_description__wrapper--text p {
-  width: 45.2rem;
   margin-bottom: 4.1rem;
 }
 .about_description__wrapper--text a {
@@ -343,7 +341,7 @@ p {
 
 .about_poeple {
   background: #f4f0ec;
-  padding: 18.5rem 0;
+  padding: 18.45rem 0;
   margin-bottom: 21.3rem;
 }
 .about_poeple h1 {
@@ -354,13 +352,11 @@ p {
 }
 .about_poeple__cardholder {
   display: flex;
-  gap: 2.2rem;
+  justify-content: space-between;
 }
 .about_poeple__card {
   background: #fff;
   position: relative;
-  width: 28.35rem;
-  height: 43rem;
   border-radius: 34px;
 }
 .about_poeple__card--container {
@@ -447,7 +443,7 @@ p {
   line-height: 3.3rem;
 }
 .about_creative__text--area {
-  width: 79.6rem;
+  width: 78.54rem;
   height: 17.5rem;
   color: #4d5053;
   background: #fff;
@@ -540,6 +536,58 @@ p {
   padding-bottom: 4.6rem;
 }
 
+@media (max-width: 1440px) {
+  .main-navigation__content {
+    gap: 17rem;
+  }
+  .about_banner {
+    width: auto;
+    margin-bottom: 15rem;
+  }
+  .about_banner__img--about h1 {
+    text-align: center;
+  }
+  .about_introduce {
+    padding-left: 32.5rem;
+  }
+  .about_introduce__border {
+    margin-bottom: 15rem;
+  }
+  .about_description {
+    margin-bottom: 10rem;
+  }
+  .about_description__wrapper--concept {
+    gap: 7rem;
+    margin-bottom: 10rem;
+    flex-direction: column-reverse;
+  }
+  .about_description__wrapper--text h1 {
+    text-align: center;
+  }
+  .about_description__wrapper--text p {
+    text-align: center;
+    width: auto;
+  }
+  .about_description__wrapper--buttom {
+    margin-left: 32rem;
+  }
+  .about_description__wrapper--portfolio {
+    gap: 7rem;
+    flex-direction: column;
+  }
+  .about_poeple {
+    margin-bottom: 10rem;
+    padding: 10rem 0;
+  }
+  .about_poeple__wrapper h1 {
+    margin: 0 20.21667% 5rem;
+  }
+  .about_poeple__cardholder {
+    gap: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (max-width: 1000px) {
   .main-navigation__content {
     gap: 3rem;

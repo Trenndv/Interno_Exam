@@ -2,6 +2,10 @@
 @use "./fonts";
 @use "./colors";
 
+// * {
+//   outline: 1px solid red;
+// }
+
 %centerd-content {
   margin: 0 percentage($number: 360/1920);
 }
@@ -57,11 +61,10 @@
   &__content--vector {
     display: flex;
     gap: 3.1rem;
+    align-items: center;
   }
 }
 .about_banner {
-  width: 192rem;
-  height: 35.6rem;
   background-image: url(../../styles/img-about/about-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -125,7 +128,7 @@
       background-color: colors.$white;
       z-index: 1;
       top: -3rem;
-      left: 17.5rem;
+      left: 16.65rem;
     }
     &--bottom {
       position: absolute;
@@ -134,7 +137,7 @@
       background-color: colors.$white;
       z-index: 1;
       bottom: -3rem;
-      left: 17.5rem;
+      left: 16.65rem;
     }
   }
 }
@@ -157,7 +160,6 @@
         margin-bottom: 2.3rem;
       }
       p {
-        width: 45.2rem;
         margin-bottom: 4.1rem;
       }
       a {
@@ -192,7 +194,7 @@
 }
 .about_poeple {
   background: colors.$white-gray;
-  padding: 18.5rem 0;
+  padding: 18.45rem 0;
   margin-bottom: 21.3rem;
   h1 {
     text-align: center;
@@ -205,13 +207,13 @@
   }
   &__cardholder {
     display: flex;
-    gap: 2.2rem;
+    justify-content: space-between;
   }
   &__card {
     background: colors.$white;
     position: relative;
-    width: 28.35rem;
-    height: 43rem;
+    // width: 28.35rem;
+    // height: 43rem;
     border-radius: 34px;
 
     &--container {
@@ -257,6 +259,7 @@
     &--front {
       border-radius: 34px;
       transform: rotateY(0deg);
+      // max-width: 100%;
       &:hover {
         transform: rotateY(-180deg);
       }
@@ -299,7 +302,7 @@
       line-height: 3.3rem;
     }
     &--area {
-      width: 79.6rem;
+      width: 78.54rem;
       height: 17.5rem;
       color: colors.$black-gray;
       background: colors.$white;
@@ -396,6 +399,67 @@
   &__copyright {
     text-align: center;
     padding-bottom: 4.6rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-navigation {
+    &__content {
+      gap: 17rem;
+    }
+  }
+  .about_banner {
+    width: auto;
+    margin-bottom: 15rem;
+    &__img--about {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+  .about_introduce {
+    padding-left: 32.5rem;
+    &__border {
+      margin-bottom: 15rem;
+    }
+  }
+  .about_description {
+    margin-bottom: 10rem;
+    &__wrapper--concept {
+      gap: 7rem;
+      margin-bottom: 10rem;
+      flex-direction: column-reverse;
+    }
+    &__wrapper--text {
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        width: auto;
+      }
+    }
+    &__wrapper--buttom {
+      margin-left: 32rem;
+    }
+    &__wrapper--portfolio {
+      gap: 7rem;
+      flex-direction: column;
+    }
+  }
+  .about_poeple {
+    margin-bottom: 10rem;
+    padding: 10rem 0;
+    &__wrapper {
+      h1 {
+        margin: 0 20.21667% 5rem;
+      }
+    }
+    &__cardholder {
+      gap: 6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 
