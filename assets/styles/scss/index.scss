@@ -1,9 +1,9 @@
 @use "./reset";
 @use "./fonts";
 @use "./colors";
-// * {
-//   outline: 1px solid red;
-// }
+* {
+  outline: 1px solid red;
+}
 
 %centerd-content {
   margin: 0 percentage($number: 360/1920);

@@ -208,6 +208,7 @@
   &__cardholder {
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
   }
   &__card {
     background: colors.$white;
@@ -418,7 +419,7 @@
     }
   }
   .about_introduce {
-    padding-left: 32.5rem;
+    padding-left: 33rem;
     &__border {
       margin-bottom: 15rem;
     }
@@ -456,14 +457,32 @@
       }
     }
     &__cardholder {
-      gap: 6rem;
-      flex-wrap: wrap;
+      gap: 2rem;
+      // flex-wrap: wrap;
       justify-content: center;
     }
   }
+  .about_creative {
+    &__text--area {
+      max-width: 100%;
+    }
+    &__text--buttom {
+      margin: auto;
+    }
+  }
+  .about_interno {
+    &__main--logo {
+      p {
+        width: 24.3rem;
+      }
+    }
+    // &__copyright {
+    //   // margin: 0 percentage($number: 584/1920);
+    // }
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .main-navigation {
     &__content {
       gap: 3rem;
@@ -474,10 +493,10 @@
   .about_banner {
     margin-bottom: 10rem;
     &__img--text {
-      padding: 17.8rem 11.875% 0;
+      padding: 17.8rem 24.875% 0;
     }
     &__img--about {
-      padding: 4.1rem 10.019881%;
+      // padding: 4.1rem 10.019881%;
       h1 {
         width: 19.9rem;
       }
@@ -487,7 +506,7 @@
     }
   }
   .about_introduce {
-    padding-left: 3%;
+    padding-left: 5.55%;
   }
   .about_description {
     margin-bottom: 10rem;
@@ -501,6 +520,122 @@
       display: flex;
       gap: 3rem;
       flex-direction: column;
+    }
+    &__wrapper--buttom {
+      margin: auto;
+    }
+  }
+  .about_poeple {
+    &__cardholder {
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+    &__wrapper {
+      h1 {
+        width: auto;
+      }
+    }
+  }
+  .about_creative {
+    &__text {
+      margin: auto;
+      &--area {
+        max-width: 100%;
+      }
+    }
+  }
+  .about_interno {
+    width: auto;
+    &__main {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 412px) {
+  .main-navigation {
+    padding: 4.4rem 18.75% 5.7rem 10%;
+    &__content--links {
+      gap: 3rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__content--vector {
+      gap: 0.5rem;
+    }
+  }
+  .about_banner {
+    margin-bottom: 7rem;
+    &__img--text {
+      padding: 10.8rem 29.875% 0 19.75%;
+    }
+    &__img--about {
+      padding: 0;
+      width: auto;
+      height: auto;
+      h1 {
+        width: auto;
+      }
+    }
+  }
+  .about_introduce {
+    padding-left: 2.5%;
+    &__border {
+      height: auto;
+      width: 34.5rem;
+      border: 15px solid #f4f0ec;
+      margin-bottom: 7rem;
+      &--text {
+        padding: 1.7rem 1.2rem;
+      }
+      &--top {
+        max-width: 65.75%;
+        left: 5.5rem;
+      }
+      &--bottom {
+        max-width: 65.75%;
+        left: 5.5rem;
+      }
+    }
+  }
+  .about_description {
+    margin: 0 18% 7rem 7%;
+    &__wrapper--concept {
+      margin-bottom: 6rem;
+    }
+  }
+  .about_poeple {
+    margin-bottom: 7rem;
+    padding: 7rem 0;
+    &__wrapper {
+      margin: 0 18.75% 0 8%;
+    }
+  }
+  .about_creative {
+    margin: 0 21.75% 7rem 10%;
+    &__text {
+      h1 {
+        text-align: start;
+        margin-bottom: 5.7rem;
+      }
+    }
+    &__text--name {
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+    &__text--area {
+      margin-bottom: 5rem;
+    }
+  }
+  .about_interno {
+    margin: 0 21.75% 0 10%;
+    &__main {
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+    &__copyright {
+      text-align: start;
     }
   }
 }
