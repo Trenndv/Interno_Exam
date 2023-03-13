@@ -555,6 +555,7 @@ p {
     margin-bottom: 15rem;
   }
   .about_description {
+    margin: 0 14.75% 0 23%;
     margin-bottom: 10rem;
   }
   .about_description__wrapper--concept {
@@ -593,15 +594,27 @@ p {
   .about_creative__text--buttom {
     margin: auto;
   }
+  .about_interno {
+    width: auto;
+  }
+  .about_interno__main {
+    gap: 5rem;
+  }
   .about_interno__main--logo p {
     width: 24.3rem;
   }
 }
 @media (max-width: 1024px) {
+  * {
+    outline: 1px solid red;
+  }
   .main-navigation__content {
     gap: 3rem;
     flex-direction: column;
     align-items: center;
+  }
+  .main-navigation__content--links {
+    gap: 4.75rem;
   }
   .about_banner {
     margin-bottom: 10rem;
@@ -609,17 +622,14 @@ p {
   .about_banner__img--text {
     padding: 17.8rem 24.875% 0;
   }
-  .about_banner__img--about h1 {
-    width: 19.9rem;
-  }
-  .about_banner__img--about p {
-    width: 19.9rem;
-  }
   .about_introduce {
     padding-left: 5.55%;
   }
+  .about_introduce__border {
+    margin-bottom: 12rem;
+  }
   .about_description {
-    margin-bottom: 10rem;
+    margin: 0 6.75% 10rem 6%;
   }
   .about_description__wrapper--concept {
     display: flex;
@@ -681,6 +691,11 @@ p {
   }
   .about_banner__img--about h1 {
     width: auto;
+    font-size: 4rem;
+  }
+  .about_banner__img--about p {
+    width: auto;
+    font-size: 1.8rem;
   }
   .about_introduce {
     padding-left: 2.5%;

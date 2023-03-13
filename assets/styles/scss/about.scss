@@ -425,6 +425,7 @@
     }
   }
   .about_description {
+    margin: 0 14.75% 0 23%;
     margin-bottom: 10rem;
     &__wrapper--concept {
       gap: 7rem;
@@ -471,9 +472,13 @@
     }
   }
   .about_interno {
-    &__main--logo {
-      p {
-        width: 24.3rem;
+    width: auto;
+    &__main {
+      gap: 5rem;
+      &--logo {
+        p {
+          width: 24.3rem;
+        }
       }
     }
     // &__copyright {
@@ -483,11 +488,17 @@
 }
 
 @media (max-width: 1024px) {
+  * {
+    outline: 1px solid red;
+  }
   .main-navigation {
     &__content {
       gap: 3rem;
       flex-direction: column;
       align-items: center;
+      &--links {
+        gap: 4.75rem;
+      }
     }
   }
   .about_banner {
@@ -495,21 +506,15 @@
     &__img--text {
       padding: 17.8rem 24.875% 0;
     }
-    &__img--about {
-      // padding: 4.1rem 10.019881%;
-      h1 {
-        width: 19.9rem;
-      }
-      p {
-        width: 19.9rem;
-      }
-    }
   }
   .about_introduce {
     padding-left: 5.55%;
+    &__border {
+      margin-bottom: 12rem;
+    }
   }
   .about_description {
-    margin-bottom: 10rem;
+    margin: 0 6.75% 10rem 6%;
     &__wrapper--concept {
       display: flex;
       gap: 3rem;
@@ -576,6 +581,11 @@
       height: auto;
       h1 {
         width: auto;
+        font-size: 4rem;
+      }
+      p {
+        width: auto;
+        font-size: 1.8rem;
       }
     }
   }

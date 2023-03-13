@@ -162,10 +162,6 @@ p {
   letter-spacing: 0.1px;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .interno, .contact, .news, .project, .icon, .about, .art {
   margin: 0 18.75%;
 }
@@ -195,7 +191,7 @@ p {
 }
 .main-navigation__content {
   display: flex;
-  gap: 39.9rem;
+  justify-content: space-between;
 }
 .main-navigation__content--title {
   display: flex;
@@ -670,7 +666,74 @@ p {
   padding-bottom: 4.6rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
+  .main-navigation {
+    padding: 4.4rem 10% 5.7rem;
+  }
+  .main-navigation__content {
+    gap: 15rem;
+  }
+  .banner {
+    padding: 33rem 10%;
+  }
+  .plans {
+    padding: 0 10%;
+    margin-bottom: 15rem;
+  }
+  .art {
+    margin: 0px 10%;
+  }
+  .art__main {
+    margin-bottom: 15rem;
+  }
+  .art__main--description h1 {
+    width: 41rem;
+  }
+  .art__main--description p {
+    width: 41rem;
+  }
+  .about {
+    margin: 0px 7.25% 15rem;
+    width: 90%;
+  }
+  .icon {
+    margin: 0 10% 15rem;
+  }
+  .project {
+    margin: 0 10%;
+  }
+  .project__option {
+    gap: 10rem;
+  }
+  .project__option--second {
+    gap: 10rem;
+  }
+  .experience {
+    padding: 15rem 15.822917%;
+    margin-bottom: 15rem;
+  }
+  .news {
+    margin: 0 8%;
+  }
+  .news__article {
+    gap: 3rem;
+    margin-bottom: 15rem;
+  }
+  .contact {
+    width: auto;
+    height: auto;
+  }
+  .contact__us {
+    padding: 8rem 12.25%;
+  }
+  .interno {
+    margin: 0 10%;
+  }
+  .interno__main--logo p {
+    width: 32rem;
+  }
+}
+@media (max-width: 1024px) {
   .main-navigation__content {
     gap: 3rem;
     flex-direction: column;
@@ -690,14 +753,16 @@ p {
   }
   .plans__option {
     flex-direction: column;
+    gap: 3rem;
   }
   .art__main {
     flex-direction: column-reverse;
     gap: 3.5rem;
     margin-bottom: 10rem;
+    align-items: center;
   }
   .about {
-    margin: 0;
+    margin: 0 19%;
     height: auto;
     width: auto;
   }
@@ -718,34 +783,33 @@ p {
     margin-bottom: 10rem;
   }
   .icon__wrapper {
-    flex-direction: column;
     gap: 6rem;
-  }
-  .project {
-    padding-left: 0;
+    flex-wrap: wrap;
   }
   .project__description {
-    padding-left: 0;
+    padding: 0;
     margin-bottom: 5.6rem;
   }
   .project__description h1 {
-    text-align: start;
+    text-align: center;
     margin-bottom: 4rem;
   }
   .project__description p {
-    text-align: start;
+    text-align: center;
   }
   .project__option {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5.6rem;
+    justify-content: center;
   }
   .project__option--wrapper {
     align-items: flex-start;
   }
   .project__option--second {
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5.6rem;
     margin-bottom: 10rem;
+    justify-content: center;
   }
   .experience {
     padding: 10rem 18.75%;
@@ -783,12 +847,10 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10rem;
+    gap: 2rem;
   }
   .news__article--wrapper {
     height: auto;
-  }
-  .news__article--wrapper h3 {
-    width: auto;
   }
   .contact {
     width: auto;
@@ -798,17 +860,23 @@ p {
   .contact__us {
     align-items: flex-start;
   }
+  .interno {
+    width: auto;
+  }
   .interno__main {
-    flex-direction: column;
-    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5rem;
     margin-bottom: 5rem;
   }
   .interno__copyright {
-    text-align: start;
-    padding-right: 50%;
+    text-align: center;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 412px) {
+  .main-navigation {
+    padding: 4rem 0;
+  }
   .main-navigation__content {
     flex-direction: column;
     gap: 3rem;
@@ -822,7 +890,7 @@ p {
     height: auto;
     padding-top: 19rem;
     padding-bottom: 1%;
-    margin-bottom: 13rem;
+    margin-bottom: 7rem;
   }
   .banner__description--text h1 {
     width: auto;
@@ -835,9 +903,11 @@ p {
   }
   .plans__option {
     flex-direction: column;
+    gap: 2rem;
   }
   .plans__option p {
     margin-bottom: 3rem;
+    width: auto;
   }
   .art__main {
     gap: 0.5rem;
@@ -847,29 +917,40 @@ p {
   .art__main--description h1 {
     width: auto;
   }
+  .art__main--description p {
+    width: 22rem;
+  }
   .art__main--img img {
     max-width: 100%;
   }
   .about {
     margin: 0;
     height: auto;
-    width: 42.9rem;
+    width: auto;
+    margin: 0px 10.25% 7rem;
   }
   .about__autor {
     margin-bottom: 5rem;
   }
   .about__autor h1 {
-    width: 32.7rem;
+    width: 26rem;
   }
   .about__autor--wrapper {
     flex-direction: column;
     padding-left: 0.1rem;
   }
+  .about__autor--wrapper figure {
+    width: 26rem;
+    height: auto;
+  }
+  .about__autor--name {
+    gap: 0rem;
+  }
   .about__autor--fig {
     margin-bottom: 5rem;
   }
   .icon {
-    margin-bottom: 7rem;
+    margin: 0 18% 7rem 10%;
   }
   .icon__wrapper {
     flex-direction: column;
@@ -895,7 +976,6 @@ p {
   .project__option--wrapper {
     align-items: flex-start;
     gap: 0;
-    flex-direction: column;
   }
   .project__option--second {
     flex-direction: column;
@@ -911,6 +991,7 @@ p {
   .experience__meny {
     gap: 6.6rem;
     flex-direction: column;
+    padding-left: 0rem;
   }
   .experience__wrapper {
     gap: 3rem;
@@ -936,10 +1017,12 @@ p {
   .news__article {
     flex-direction: column;
     margin-bottom: 10rem;
-    margin-left: -23.25%;
   }
   .news__article--wrapper h3 {
     width: auto;
+  }
+  .news__article--design {
+    max-width: 100%;
   }
   .contact {
     max-width: 100%;
@@ -951,20 +1034,17 @@ p {
   .contact__us {
     padding: 8rem 20.25%;
   }
-  .interno {
-    margin: 10%;
-  }
   .interno__main {
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 5rem;
   }
   .interno__main--logo p {
-    width: 34rem;
+    width: auto;
   }
   .interno__copyright {
     text-align: start;
-    width: 34rem;
+    width: auto;
   }
 }
 
